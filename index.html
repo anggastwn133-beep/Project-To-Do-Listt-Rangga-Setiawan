@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Rangga 🚀</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>MY SCHEDULE</h1>
+      <p id="date-today"></p>
+    </header>
+
+    <div class="input-area">
+      <input type="text" id="inputTask" placeholder="What is your schedule?">
+      <button id="tambah">Tambah</button>
+    </div>
+
+    <div class="filter-container">
+      <button class="btn-filter active" data-filter="semua">Semua</button>
+      <button class="btn-filter" data-filter="belum">Pending</button>
+      <button class="btn-filter" data-filter="selesai">Selesai</button>
+    </div>
+
+    <ul id="listTask"></ul>
+    
+    <div id="empty-state" class="hidden">
+      <p>Yay! Tidak ada tugas tersisa. 🎉</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
